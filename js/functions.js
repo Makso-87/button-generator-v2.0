@@ -1,4 +1,3 @@
-/*Объявляем локальные переменные*/ 
 var padding_vertical;
 var padding_horizontal;
 var font_s;
