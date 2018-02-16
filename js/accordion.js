@@ -2,18 +2,25 @@ var count1 = 0;
 var count2 = 0;
 var count3 = 0;
 var count4 = 0;
-var cross = document.querySelectorAll('.cross');
-var par = document.querySelectorAll('.tab');
-var link = document.querySelectorAll('.bar');
-par[0].style.transition = 'all 0.5s';
-par[1].style.transition = 'all 0.5s';
-par[2].style.transition = 'all 0.5s';
-par[3].style.transition = 'all 0.5s';
+var cross = document.querySelectorAll('.cross'); //Получаем коллекцию элементов с классом .cross
+var par = document.querySelectorAll('.tab'); //Получаем коллекцию элементов с классом .tab
+var link = document.querySelectorAll('.bar'); //Получаем коллекцию элементов с классом .bar
+
+/*Устанавливаем на элементы с классом .tab совйство transition для анмации движения*/
+
+for(var i = 0; i < par.length; i++) {
+	par[i].style.transition = 'all 0.5s';
+}
+
+/*Функция отвечает за плавное разворачивание и сворачивание блока настроек "Основные параметры"*/
+
 function Slide1(){
 	if(count1 % 2 == 0) {
+		/*Разворачиваем этот блок*/
 		par[0].style.height = '180px'; 
 		par[0].style.paddingTop = '10px'; 
 		par[0].style.paddingBottom = '10px';
+		/*Сворачиваем остальные блоки*/
 		par[1].style.height = '0px'; 
 		par[1].style.paddingTop = '0px'; 
 		par[1].style.paddingBottom = '0px'; 
@@ -46,11 +53,15 @@ function Slide1(){
 	count1++;
 }
 
+/*Функция отвечает за плавное разворачивание и сворачивание блока настроек "Параметры текста"*/
+
 function Slide2(){
 	if(count2 % 2 == 0) {
+		/*Разворачиваем этот блок*/
 		par[1].style.height = '250px'; 
 		par[1].style.paddingTop = '10px'; 
 		par[1].style.paddingBottom = '10px'; 
+		/*Сворачиваем остальные блоки*/
 		par[0].style.height = '0px'; 
 		par[0].style.paddingTop = '0px'; 
 		par[0].style.paddingBottom = '0px';
@@ -83,11 +94,15 @@ function Slide2(){
 	count2++;
 }
 
+/*Функция отвечает за плавное разворачивание и сворачивание блока настроек "Дополнительные параметры"*/
+
 function Slide3(){
 	if(count3 % 2 == 0) {
+		/*Разворачиваем этот блок*/
 		par[2].style.height = '270px'; 
 		par[2].style.paddingTop = '10px'; 
 		par[2].style.paddingBottom = '10px'; 
+		/*Сворачиваем остальные блоки*/
 		par[0].style.height = '0px'; 
 		par[0].style.paddingTop = '0px'; 
 		par[0].style.paddingBottom = '0px';
@@ -120,11 +135,15 @@ function Slide3(){
 	count3++;	
 }
 
+/*Функция отвечает за плавное разворачивание и сворачивание блока настроек "Эффект наведения"*/
+
 function Slide4(){
 	if(count4 % 2 == 0) {
+		/*Разворачиваем этот блок*/
 		par[3].style.height = '150px'; 
 		par[3].style.paddingTop = '10px'; 
 		par[3].style.paddingBottom = '10px'; 
+		/*Сворачиваем остальные блоки*/
 		par[0].style.height = '0px'; 
 		par[0].style.paddingTop = '0px'; 
 		par[0].style.paddingBottom = '0px';
@@ -156,6 +175,8 @@ function Slide4(){
 	}
 	count4++;	
 }
+
+/*Функция устанавливает начальные значения кнопки*/
 
 function Default (){
 	var button = document.querySelector('.custom');
