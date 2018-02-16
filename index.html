@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<title>Генератор кнопок</title>
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/functions.js"></script>
+</head>	
+<body >
+		<div class="content">
+			<div class="row">
+				<div class="cols col-6">
+					<h2>Настройки параметров кнопки</h2>
+					<div class="block">
+						<a class="bar"  href="#"><span class="cross">&#10006;</span><span> Основные параметры</span></a>
+						<div class="tab">
+							<form name="form1" action="#" method="post">
+								<table>
+									<tr>
+										<td>
+											<label for="bg">Цвет фона</label>
+											<input name="bg" type="color" value="#8080ff">
+										</td>
+										<td><input id="main_4" type="text"></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td><label for="width">Ширина кнопки</label></td>
+										<td><input name="width" type="range" max="100" min="10" step="1" value="20"></td>
+										<td><input id="main_1" type="text"></td>
+									</tr>
+									<tr>
+										<td><label for="height">Высота кнопки</label></td>
+										<td><input name="height" type="range" max="40" min="5" step="1" value="10"></td>
+										<td><input id="main_2" type="text"></td>
+									</tr>
+									<tr>
+										<td>
+											<label for="radius">Скругление углов</label>
+											<input id="3" name="radius" type="checkbox" checked="checked">
+										</td>
+										<td><input name="rad" type="range" max="50" min="1" step="1" value="25"></td>
+										<td><input id="main_3" type="text"></td>
+									</tr>
+								</table>							
+							</form>
+						</div>
+						<a class="bar" href="#"><span class="cross">&#10006;</span><span> Параметры текста</span></a>
+						<div class="tab">
+							<form name="form2" action="#" method="post">
+								<table>
+									<tr>
+										<td>
+											<label for="fontset">Шрифт</label>
+											<select name="fontset">
+												<option value="Arial">Arial</option>
+												<option value="Arial Black">Arial Black</option>
+												<option value="Courier New">Courier New</option>
+												<option value="Impact">Impact</option>
+												<option value="Comic Sans MS">Comic Sans MS</option>
+												<option selected="selected" value="Helvetica">Helvetica</option>
+												<option value="Trebuchet MS">Trebuchet MS</option>
+												<option value="Verdana">Verdana</option>
+												<option value="Georgia">Georgia</option>
+												<option value="Tahoma">Tahoma</option>
+											</select>
+										</td>
+										<td>Размер шрифта</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>
+											<label for="text">Текст</label>
+											<input id="text_6" name="text" type="text" value="Кнопка">
+										</td>
+										<td>
+											<table class="minitable">
+												<tr>
+													<td><label for="font">Цвет текста</label></td>
+													<td><input name="font" type="color" value="#004040"></td>
+												</tr>
+											</table>
+											
+											
+										</td>
+										<td><input id="text_4" type="text"></td>
+									</tr>
+									<tr>
+										<td>
+											<label for="text_shadow">Тень текста</label>
+											<input id="4" name="text_shadow" type="checkbox" checked="checked">
+										</td>
+										<td>
+											<table class="minitable">
+												<tr>
+													<td><label for="text_shadow_color">Цвет тени текста</label></td>
+													<td><input name="text_shadow_color" type="color" value="#c0c0c0"></td>
+												</tr>
+											</table>										
+										</td>
+										<td><input id="text_5" type="text"></td>
+									</tr>
+									<tr>
+										<td><label for="tsh_x">Смещение тени по оси Х</label></td>
+										<td><input name="tsh_x" type="range" max="10" min="-10" step="1" value="0"></td>
+										<td><input id="text_1" type="text"></td>
+									</tr>
+									<tr>
+										<td><label for="tsh_y">Смещение тени по оси Y</label></td>
+										<td><input name="tsh_y" type="range" max="10" min="-10" step="1" value="1"></td>
+										<td><input id="text_2" type="text"></td>
+									</tr>
+									<tr>
+										<td><label for="tsh_blur">Размытие тени</label></td>
+										<td><input name="tsh_blur" type="range" max="10" min="0" step="1" value="1"></td>
+										<td><input id="text_3" type="text"></td>
+									</tr>
+								</table>	
+							</form>
+						</div>
+						<a class="bar" href="#"><span class="cross">&#10006;</span><span> Дополнительные параметры</span></a>
+						<div class="tab">
+							<form name="form3" action="#" method="post">
+								<table>
+									<tr>
+										<td>
+											<label for="border">Рамка</label>
+											<input id="1" name="border" type="checkbox">
+										</td>
+										<td>
+											<label for="border_color">Цвет рамки</label>
+											<input name="border_color" type="color" value="#000000">
+										</td>
+										<td><input id="prop_6" type="text"></td>
+									</tr>
+									<tr>
+										<td>
+											<label for="brd_width">Ширина рамки</label>
+										</td>
+										<td>
+											<input name="brd_width" type="range" max="10" min="1" step="1" value="2">
+										</td>
+										<td><input id="prop_1" type="text"></td>
+									</tr>
+									<tr>
+										<td>
+											<label for="shadow">Тень</label>
+											<input id="2" name="shadow" type="checkbox" checked="checked">
+										</td>
+											
+										<td>
+											<label for="shadow_color">Цвет тени рамки</label>
+											<input name="shadow_color" type="color" value="#000000">
+										</td>
+										<td><input id="prop_7" type="text"></td>
+									</tr>
+									<tr>
+										<td>
+											<label for="sh_x">Смещение тени по оси Х</label>
+										</td>
+										<td>
+											<input name="sh_x" type="range" max="10" min="0" step="1" value="0">
+										</td>
+										<td><input id="prop_2" type="text"></td>
+									</tr>
+									<tr>
+										<td>
+											<label for="sh_y">Смещение тени по оси Y</label>
+										</td>
+										<td>
+											<input name="sh_y" type="range" max="10" min="0" step="1" value="1">
+										</td>
+										<td><input id="prop_3" type="text"></td>
+									</tr>
+									<tr>
+										<td><label for="sh_blur">Размытие тени</label></td>
+										<td><input name="sh_blur" type="range" max="10" min="0" step="1" value="1"></td>
+										<td><input id="prop_4" type="text"></td>
+									</tr>
+									<tr>
+										<td><label for="sh_strach">Растяжение тени</label></td>
+										<td><input name="sh_strach" type="range" max="10" min="0" step="1" value="1"></td>
+										<td><input id="prop_5" type="text"></td>
+									</tr>	
+								</table>
+							</form>
+						</div>
+						<a class="bar" href="#"><span class="cross">&#10006;</span><span> Эффект наведения</span></a>
+						<div class="tab">
+							<form name="form4" action="#" method="post">
+								<table>
+									<tr>
+										<td>
+											<input class="radio" name="hover" type="radio" checked="checked">
+											<label for="hover">Сплошной фон</label>
+										</td>
+										<td>
+											<input class="radio" name="hover" type="radio" >
+											<label for="hover">Градиент</label>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label>Цвет</label>
+											<input name="hover_color" type="color" value="#0080ff">
+											<input id="hov_1" type="text">
+										</td>
+										<td>
+											<label>Цвет 1</label>
+											<input name="hover_grad_col_1" type="color" value="#8000ff">
+											<input id="hov_2" type="text">
+										</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>
+											<label>Цвет 2</label>
+											<input name="hover_grad_col_2" type="color" value="#0080ff">
+											<input id="hov_3" type="text">
+										</td>
+									</tr>
+								</table>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="cols col-6">
+					<h2>Предварительный просмотр</h2>
+						<div class="field">
+							<div class="button">
+								<a class="custom" href="#"></a>
+							</div>
+						</div>
+						<h3 class="code">Код для вставки</h3>
+						<div class="field">
+							<div id="container">
+								<p class="source"></p>
+								<p class="source1"></p>
+								<p>}</p>
+								<p class="source2"></p>
+								<p>}</p>
+							</div>
+						</div>
+						<div class="buff"><a class="clipboard" href="#">Копировать в буфер</a></div>
+						<div id="cont_right"></div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/accordion.js"></script>
+		<script type="text/javascript" src="js/prevdata.js"></script>
+</body>
+</html>
