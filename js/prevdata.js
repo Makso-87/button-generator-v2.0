@@ -1,16 +1,16 @@
 
 /*Получаем начальные значения всех элементов input*/
-text1 =  document.querySelector("[name='text']").value;
-bg_color = document.querySelector("[name='bg']").value;
-font_color = document.querySelector("[name='font']").value;
-border_color = document.querySelector("[name='border_color']").value;
-shadow_color = document.querySelector("[name='shadow_color']").value;
-width = document.querySelector("[name='width']").value;
-height = document.querySelector("[name='height']").value;
-text_shadow_color = document.querySelector("[name='text_shadow_color']").value;
-hoverbg = document.querySelector("[name='hover_color']").value;
-hovergradcol1 = document.querySelector("[name='hover_grad_col_1']").value;
-hovergradcol2 = document.querySelector("[name='hover_grad_col_2']").value;
+var text1 =  document.querySelector("[name='text']").value;
+var bg_color = document.querySelector("[name='bg']").value;
+var font_color = document.querySelector("[name='font']").value;
+var border_color = document.querySelector("[name='border_color']").value;
+var shadow_color = document.querySelector("[name='shadow_color']").value;
+var width = document.querySelector("[name='width']").value;
+var height = document.querySelector("[name='height']").value;
+var text_shadow_color = document.querySelector("[name='text_shadow_color']").value;
+var hoverbg = document.querySelector("[name='hover_color']").value;
+var hovergradcol1 = document.querySelector("[name='hover_grad_col_1']").value;
+var hovergradcol2 = document.querySelector("[name='hover_grad_col_2']").value;
 
 /*Устанавливаем необходимые значения поля вывода информации (элементы input type="text")*/
 document.querySelector("#main_4").value = bg_color;

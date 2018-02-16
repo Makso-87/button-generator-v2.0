@@ -1,3 +1,4 @@
+/*Объявляем глобальные переменные*/ 
 var padding_vertical;
 var padding_horizontal;
 var font_s;
@@ -65,7 +66,7 @@ function border(){
 	var el = document.querySelector('#sp1');
 	/*Проверяем стоит ли флажок "Рамка*/
 	if(bord.checked) {
-		document.querySelector('.custom').style.border = `${border_widthpx} solid ${border_color}`;
+		document.querySelector('.custom').style.border = `${border_width}px solid ${border_color}`;
 		document.querySelector('#prop_1').value = border_width;
 		/*Проверяем есть ли элемент span с id sp1 */
 		if(el === null) {
